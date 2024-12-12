@@ -1,0 +1,5 @@
+Hello, this is a sample file.
+It contains multiple lines of text.
+Python makes file handling easy and fun!
+You can read, write, and even modify this file.
+Have a great day experimenting with Python!
