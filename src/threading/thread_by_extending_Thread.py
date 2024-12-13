@@ -3,7 +3,7 @@ from typing import Callable, Any
 from time import ctime
 
 class MyThread(threading.Thread):
-    def __init__(self, func: Callable, args: tuple, name: str = ''):
+    def __init__(self, func, args, name = ''):
         super().__init__()
         self.func = func
         self.args = args
