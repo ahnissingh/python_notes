@@ -108,7 +108,7 @@ for key , value in my_dict.items():
 
 # 5. **pop()**: Removes a key-value pair and returns the value.
 print(my_dict.pop('key1'))  # Output: 'updated_value1'
-
+my_dict.popitem()
 # 6. **clear()**: Removes all key-value pairs from the dictionary.
 my_dict.clear()  # Clears the dictionary
 
