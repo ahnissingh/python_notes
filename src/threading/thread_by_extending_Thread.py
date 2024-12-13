@@ -17,3 +17,21 @@ class MyThread(threading.Thread):
         print(f'Starting {self.name} at: {ctime()}')
         self.res = self.func(*self.args)
         print(f'{self.name} finished at: {ctime()}')
+
+
+thread1 = MyThread(func=example_function, args=(10, 20), name="AdditionThread1")
+thread2 = MyThread(func=example_function, args=(30, 40), name="AdditionThread2")
+
+thread1.start()
+thread2.start()
+
+# Wait for threads to complete
+thread1.join()
+thread2.join()
+
+# Get results
+result1 = thread1.get_result()
+result2 = thread2.get_result()
+
+print(f"Result from {thread1.name}: {result1}")
+print(f"Result from {thread2.name}: {result2}")
