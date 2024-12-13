@@ -18,7 +18,10 @@ class MyThread(threading.Thread):
         self.res = self.func(*self.args)
         print(f'{self.name} finished at: {ctime()}')
 
-
+def example_function(x, y):
+    sleep(2)  # Simulating a time-consuming task
+    return x + y
+    
 thread1 = MyThread(func=example_function, args=(10, 20), name="AdditionThread1")
 thread2 = MyThread(func=example_function, args=(30, 40), name="AdditionThread2")
 
