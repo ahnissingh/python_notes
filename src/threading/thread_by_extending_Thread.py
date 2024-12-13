@@ -10,7 +10,7 @@ class MyThread(threading.Thread):
         self.name = name
         self.res = None
 
-    def get_result(self) -> Any:
+    def get_result(self)
         return self.res
 
     def run(self):
