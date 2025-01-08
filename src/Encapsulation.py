@@ -10,7 +10,6 @@ class Car:
          eg car  = Car('suzuki','800')
          name = car._Car__brand
  """
-
     # Getter method for brand
     def get_brand(self):
         return self.__brand
